@@ -22,6 +22,10 @@
 		8EB48779282F6CA800270CF6 /* HotCoffeeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB48778282F6CA800270CF6 /* HotCoffeeUITestsLaunchTests.swift */; };
 		8EB48787282F6ED600270CF6 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB48786282F6ED600270CF6 /* OrdersTableViewController.swift */; };
 		8EB48789282F6F0900270CF6 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB48788282F6F0900270CF6 /* AddOrderViewController.swift */; };
+		8EC4179228F5567E003174B2 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC4179128F5567E003174B2 /* NetworkResponse.swift */; };
+		8EC4179428F556AF003174B2 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC4179328F556AF003174B2 /* NetworkResult.swift */; };
+		8EC4179628F556D5003174B2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC4179528F556D5003174B2 /* NetworkError.swift */; };
+		8EC4179828F5571C003174B2 /* HTTPURLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC4179728F5571C003174B2 /* HTTPURLResponse+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		8EB48778282F6CA800270CF6 /* HotCoffeeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCoffeeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8EB48786282F6ED600270CF6 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		8EB48788282F6F0900270CF6 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
+		8EC4179128F5567E003174B2 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		8EC4179328F556AF003174B2 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		8EC4179528F556D5003174B2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8EC4179728F5571C003174B2 /* HTTPURLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,7 @@
 		8E19FA94282F74AC00C051B6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				8EC4179028F5564E003174B2 /* NetworkManager */,
 				8E19FA95282F74C200C051B6 /* Webservice.swift */,
 			);
 			path = Services;
@@ -175,6 +184,17 @@
 				8EB48788282F6F0900270CF6 /* AddOrderViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8EC4179028F5564E003174B2 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8EC4179128F5567E003174B2 /* NetworkResponse.swift */,
+				8EC4179328F556AF003174B2 /* NetworkResult.swift */,
+				8EC4179528F556D5003174B2 /* NetworkError.swift */,
+				8EC4179728F5571C003174B2 /* HTTPURLResponse+Extension.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,12 +329,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E19FA99282F7A3B00C051B6 /* Order.swift in Sources */,
+				8EC4179428F556AF003174B2 /* NetworkResult.swift in Sources */,
 				8E19FA9E282F81CE00C051B6 /* AddCoffeeOrderViewModel.swift in Sources */,
 				8EB48756282F6C9E00270CF6 /* AppDelegate.swift in Sources */,
+				8EC4179828F5571C003174B2 /* HTTPURLResponse+Extension.swift in Sources */,
 				8EB48758282F6C9E00270CF6 /* SceneDelegate.swift in Sources */,
 				8EB48787282F6ED600270CF6 /* OrdersTableViewController.swift in Sources */,
+				8EC4179228F5567E003174B2 /* NetworkResponse.swift in Sources */,
 				8E19FA96282F74C200C051B6 /* Webservice.swift in Sources */,
 				8E19FA9C282F7D1900C051B6 /* OrderViewModel.swift in Sources */,
+				8EC4179628F556D5003174B2 /* NetworkError.swift in Sources */,
 				8EB48789282F6F0900270CF6 /* AddOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
